@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/simingyum/product/issues"
   },
-  "homepage": "https://github.com/simingyum/product#readme"
+  "homepage": "https://github.com/simingyum/product#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
