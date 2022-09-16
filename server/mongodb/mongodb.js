@@ -18,7 +18,7 @@ const productSchema = new mongoose.Schema ({
   description: String,
   category: String,
   default_price: Number,
-  features: [featureSchema]
+  // features: [featureSchema]
 });
 
 let Product = mongoose.model('Product', productSchema);
@@ -32,23 +32,23 @@ const photoSchema = new mongoose.Schema ({
 
 let Photo = mongoose.model('Photo', photoSchema);
 
-const styleSchema = new mongoose.Schema ({
-  id: { type: Number, unique: true },
-  name: String,
-  sale_price: Number,
-  original_price: Number,
-  default_style: Boolean,
-  product_id: Number,
-  photos: [photoSchema]
-});
+// const styleSchema = new mongoose.Schema ({
+//   id: { type: Number, unique: true },
+//   name: String,
+//   sale_price: Number,
+//   original_price: Number,
+//   default_style: Boolean,
+//   product_id: Number,
+//   photos: [photoSchema]
+// });
 
-let Style = mongoose.model('Style', styleSchema);
+// let Style = mongoose.model('Style', styleSchema);
 
-const skuSchema = new mongoose.Schema ({
-  id: { type: Number, unique: true },
-  quantity: Number,
-  size: String,
-  style_id: Number
-});
+// const skuSchema = new mongoose.Schema ({
+//   id: { type: Number, unique: true },
+//   quantity: Number,
+//   size: String,
+//   style_id: Number
+// });
 
-let Sku = mongoose.model('Sku', skuSchema);
+// let Sku = mongoose.model('Sku', skuSchema);
