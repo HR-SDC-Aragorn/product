@@ -7,7 +7,7 @@ router.get('/products/:id/related', controller.related.get);
 
 router.get('/products/:id/styles', controller.styles.get);
 
-router.get('/:styleid/skus', controller.skus.get);
+// router.get('/:styleid/skus', controller.skus.get);
 
 // router.post('/cart', controller.cart.post);
 

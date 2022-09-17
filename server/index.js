@@ -8,8 +8,6 @@ const morgan = require('morgan');
 let router = require('./routes.js');
 const app = express();
 app.use(morgan('dev'));
-// app.use(morgan(':method :url :status :res[content-length] - :response-time ms'));
-
 app.use(express.json());
 app.use('/', router);
 

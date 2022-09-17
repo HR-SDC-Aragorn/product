@@ -2,7 +2,7 @@ const db = require('../db');
 
 module.exports = {
   get: function (productID, callback) {
-    console.log('what is the product id: ', productID)
+
     let queryString = `SELECT ARRAY (
                        SELECT related_product_id
                        FROM related
