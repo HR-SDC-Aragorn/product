@@ -14,3 +14,11 @@ command code to load data to PostgreSQL
 
 -- to alter the data type in a table
 -- ALTER TABLE styles ALTER COLUMN sale_price TYPE text USING sale_price::text;
+
+-- to add index to tables
+-- CREATE INDEX idx_product_id ON products(id);
+-- CREATE INDEX idx_style_id ON styles(style_id);
+-- CREATE INDEX idx_style_product_id ON styles(product_id);
+-- CREATE INDEX idx_photo_style_id ON photos(style_id);
+-- CREATE INDEX idx_sku_style_id ON skus(style_id);
+-- CREATE INDEX idx_related_product_id ON related(product_id);
