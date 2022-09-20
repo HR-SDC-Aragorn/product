@@ -7,6 +7,7 @@ module.exports = {
         console.log('Something went wrong in the controller for all products route');
         console.log(err);
       } else {
+        console.log(result.rows);
         res.status(200).send(result.rows);
       }
     })
