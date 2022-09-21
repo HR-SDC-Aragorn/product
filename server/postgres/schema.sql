@@ -32,7 +32,7 @@ CREATE TABLE photos (
   id SERIAL NOT NULL PRIMARY KEY,
   url text,
   thumbnail_url text,
-  style_id INT REFERENCES styles (id)
+  style_id INT REFERENCES styles (style_id)
 );
 
 CREATE TABLE skus (

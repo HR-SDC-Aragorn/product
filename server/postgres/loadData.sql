@@ -8,9 +8,9 @@ command code to load data to PostgreSQL
 
 \copy photos(id, style_id, url, thumbnail_url) FROM 'data/photos.csv' DELIMITER ',' CSV HEADER;
 
-\copy skus(id, style_id, size, quantity) FROM 'data/skus.csv' DELIMITER ',' CSV HEADER;
+-- \copy skus(id, style_id, size, quantity) FROM 'data/skus.csv' DELIMITER ',' CSV HEADER;
 
-\copy related(id, product_id, related_product_id) FROM 'data/related.csv' DELIMITER ',' CSV HEADER;
+-- \copy related(id, product_id, related_product_id) FROM 'data/related.csv' DELIMITER ',' CSV HEADER;
 
 -- to alter the data type in a table
 -- ALTER TABLE styles ALTER COLUMN sale_price TYPE text USING sale_price::text;
@@ -22,3 +22,6 @@ command code to load data to PostgreSQL
 -- CREATE INDEX idx_photo_style_id ON photos(style_id);
 -- CREATE INDEX idx_sku_style_id ON skus(style_id);
 -- CREATE INDEX idx_related_product_id ON related(product_id);
+
+-- update "null" to null
+-- UPDATE styles SET sale_price = NULL WHERE sale_price = 'null'
